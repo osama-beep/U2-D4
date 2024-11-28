@@ -26,9 +26,7 @@ body {
 
 .note {
   background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.568);
   padding: 10px;
   width: 200px;
   height: 150px;
