@@ -8,3 +8,54 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+body {
+    display: flex;
+    background-color: #f8f9fa;
+    font-family: "Bree serif",serif ;
+}
+
+#testoAlternato {
+    margin: 20px;
+    border: 2px solid #343a40;
+    flex: 1;
+    padding: 20px;
+    padding-right: 120px;
+    font-size: 20px;
+    color: #343a40;
+}
+
+
+
+.parole i {
+    color: rgb(131, 169, 190);
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: rotateWords 9s ease-in-out infinite 0s;
+}
+
+.parole i:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.parole i:nth-child(3) {
+    animation-delay: 6s;
+}
+
+@keyframes rotateWords {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    5%, 30% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    35%, 95% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+
