@@ -1,0 +1,106 @@
+body {
+  background-color: #ccc;
+  margin: 0;
+  padding: 0;
+  font-family: Indie Flower;
+}
+
+.noteContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.taskTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.notesText {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.note {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.note:hover {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.562);
+  z-index: 2;
+}
+
+.task1 {
+  --rotation: -3deg;
+}
+.task2 {
+  --rotation: 2deg;
+}
+.task3 {
+  --rotation: -2deg;
+}
+.task4 {
+  --rotation: 3deg;
+}
+.task5 {
+  --rotation: -6deg;
+}
+.task6 {
+  --rotation: 4deg;
+}
+.task7 {
+  --rotation: -4deg;
+}
+.task8 {
+  --rotation: 4deg;
+}
+
+.task1 {
+  background-color: #93dee0;
+}
+
+.task2 {
+  background-color: #96c4f5;
+}
+
+.task3 {
+  background-color: #a4b4fa;
+}
+
+.task4 {
+  background-color: #b0a3f8;
+}
+
+.task5 {
+  background-color: #d5a4f0;
+}
+
+.task6 {
+  background-color: #cfc7fb;
+}
+
+.task7 {
+  background-color: #aed9f8;
+}
+
+.task8 {
+  background-color: #ffccad;
+}
